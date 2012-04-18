@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Pro 101 Media Infrastructure feature.
+ */
+
+include_once('pro_101_media_infrastructure.features.inc');
