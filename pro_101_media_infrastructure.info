@@ -1,7 +1,7 @@
 name = "Pro 101 Media Infrastructure"
 description = "Audiovisual media handling functionality."
 core = "7.x"
-package = "Pro 101 System (G)"
+package = "Pro 101 Infrastructure (G)"
 version = "7.x-1.0"
 project = "pro_101_media_infrastructure"
 dependencies[] = "features"
