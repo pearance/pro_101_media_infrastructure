@@ -22,11 +22,33 @@ function pro_101_media_infrastructure_user_default_permissions() {
     'module' => 'media_internet',
   );
 
+  // Exported permission: administer media
+  $permissions['administer media'] = array(
+    'name' => 'administer media',
+    'roles' => array(),
+  );
+
+  // Exported permission: edit media
+  $permissions['edit media'] = array(
+    'name' => 'edit media',
+    'roles' => array(),
+  );
+
   // Exported permission: import media
   $permissions['import media'] = array(
     'name' => 'import media',
     'roles' => array(
       0 => 'developer',
+    ),
+    'module' => 'media',
+  );
+
+  // Exported permission: view media
+  $permissions['view media'] = array(
+    'name' => 'view media',
+    'roles' => array(
+      0 => 'anonymous user',
+      1 => 'authenticated user',
     ),
     'module' => 'media',
   );
