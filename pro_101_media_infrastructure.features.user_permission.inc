@@ -19,6 +19,18 @@ function pro_101_media_infrastructure_user_default_permissions() {
     'module' => 'media_internet',
   );
 
+  // Exported permission: add media from remote urls
+  $permissions['add media from remote urls'] = array(
+    'name' => 'add media from remote urls',
+    'roles' => array(
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
+    ),
+    'module' => 'remote_stream_wrapper',
+  );
+
   // Exported permission: administer files
   $permissions['administer files'] = array(
     'name' => 'administer files',
