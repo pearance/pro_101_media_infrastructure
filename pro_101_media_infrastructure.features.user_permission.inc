@@ -10,7 +10,7 @@
 function pro_101_media_infrastructure_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: add media from remote sources
+  // Exported permission: add media from remote sources.
   $permissions['add media from remote sources'] = array(
     'name' => 'add media from remote sources',
     'roles' => array(
@@ -19,16 +19,17 @@ function pro_101_media_infrastructure_user_default_permissions() {
     'module' => 'media_internet',
   );
 
-  // Exported permission: administer files
+  // Exported permission: administer files.
   $permissions['administer files'] = array(
     'name' => 'administer files',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'file_entity',
   );
 
-  // Exported permission: administer image styles
+  // Exported permission: administer image styles.
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
     'roles' => array(
@@ -37,16 +38,19 @@ function pro_101_media_infrastructure_user_default_permissions() {
     'module' => 'image',
   );
 
-  // Exported permission: edit file
+  // Exported permission: edit file.
   $permissions['edit file'] = array(
     'name' => 'edit file',
     'roles' => array(
-      0 => 'developer',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'file_entity',
   );
 
-  // Exported permission: import media
+  // Exported permission: import media.
   $permissions['import media'] = array(
     'name' => 'import media',
     'roles' => array(
@@ -55,7 +59,7 @@ function pro_101_media_infrastructure_user_default_permissions() {
     'module' => 'media',
   );
 
-  // Exported permission: view file
+  // Exported permission: view file.
   $permissions['view file'] = array(
     'name' => 'view file',
     'roles' => array(
