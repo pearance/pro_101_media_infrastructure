@@ -14,7 +14,7 @@ function pro_101_media_infrastructure_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cs_adaptive_image_breakpoint_count';
-  $strongarm->value = '2';
+  $strongarm->value = '5';
   $export['cs_adaptive_image_breakpoint_count'] = $strongarm;
 
   $strongarm = new stdClass;
