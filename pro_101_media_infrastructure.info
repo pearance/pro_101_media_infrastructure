@@ -12,6 +12,7 @@ dependencies[] = file_entity
 dependencies[] = image
 dependencies[] = media
 dependencies[] = media_internet
+dependencies[] = remote_stream_wrapper
 dependencies[] = strongarm
 features[ctools][] = file_entity:file_default_displays:1
 features[ctools][] = strongarm:strongarm:1
