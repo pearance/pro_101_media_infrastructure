@@ -10,14 +10,14 @@
 function pro_101_media_infrastructure_strongarm() {
   $export = array();
 
-  $strongarm = new stdClass;
+  $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cs_adaptive_image_breakpoint_count';
   $strongarm->value = '5';
   $export['cs_adaptive_image_breakpoint_count'] = $strongarm;
 
-  $strongarm = new stdClass;
+  $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_file__audio';
@@ -37,7 +37,7 @@ function pro_101_media_infrastructure_strongarm() {
   );
   $export['field_bundle_settings_file__audio'] = $strongarm;
 
-  $strongarm = new stdClass;
+  $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_file__default';
@@ -57,7 +57,7 @@ function pro_101_media_infrastructure_strongarm() {
   );
   $export['field_bundle_settings_file__default'] = $strongarm;
 
-  $strongarm = new stdClass;
+  $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_file__image';
@@ -77,7 +77,7 @@ function pro_101_media_infrastructure_strongarm() {
   );
   $export['field_bundle_settings_file__image'] = $strongarm;
 
-  $strongarm = new stdClass;
+  $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_file__video';
@@ -97,14 +97,14 @@ function pro_101_media_infrastructure_strongarm() {
   );
   $export['field_bundle_settings_file__video'] = $strongarm;
 
-  $strongarm = new stdClass;
+  $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'file_extensions';
   $strongarm->value = '';
   $export['file_extensions'] = $strongarm;
 
-  $strongarm = new stdClass;
+  $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'image_toolkit';

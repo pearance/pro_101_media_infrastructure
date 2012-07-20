@@ -72,10 +72,9 @@ function pro_101_media_infrastructure_user_default_permissions() {
     'roles' => array(
       0 => 'anonymous user',
       1 => 'assistant',
-      2 => 'authenticated user',
-      3 => 'developer',
-      4 => 'professional',
-      5 => 'support',
+      2 => 'developer',
+      3 => 'professional',
+      4 => 'support',
     ),
     'module' => 'file_entity',
   );
