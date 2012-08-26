@@ -31,3 +31,4 @@ features[variable][] = field_bundle_settings_file__image
 features[variable][] = field_bundle_settings_file__video
 features[variable][] = file_extensions
 features[variable][] = image_toolkit
+features[variable][] = media__file_extensions
