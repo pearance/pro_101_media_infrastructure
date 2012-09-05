@@ -15,6 +15,7 @@ function pro_101_media_infrastructure_user_default_permissions() {
     'name' => 'add media from remote sources',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'media_internet',
   );
@@ -22,7 +23,10 @@ function pro_101_media_infrastructure_user_default_permissions() {
   // Exported permission: add media from remote urls.
   $permissions['add media from remote urls'] = array(
     'name' => 'add media from remote urls',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
     'module' => 'remote_stream_wrapper',
   );
 
@@ -41,6 +45,7 @@ function pro_101_media_infrastructure_user_default_permissions() {
     'name' => 'administer image styles',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'image',
   );
@@ -62,6 +67,7 @@ function pro_101_media_infrastructure_user_default_permissions() {
     'name' => 'import media',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'media',
   );
