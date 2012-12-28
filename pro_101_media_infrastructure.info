@@ -22,6 +22,7 @@ features[user_permission][] = add media from remote urls
 features[user_permission][] = administer file types
 features[user_permission][] = administer files
 features[user_permission][] = administer image styles
+features[user_permission][] = administer media browser
 features[user_permission][] = bypass file access
 features[user_permission][] = create files
 features[user_permission][] = delete any files
