@@ -30,6 +30,15 @@ function pro_101_media_infrastructure_user_default_permissions() {
     'module' => 'remote_stream_wrapper',
   );
 
+  // Exported permission: administer file types.
+  $permissions['administer file types'] = array(
+    'name' => 'administer file types',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'file_entity',
+  );
+
   // Exported permission: administer files.
   $permissions['administer files'] = array(
     'name' => 'administer files',
@@ -50,9 +59,63 @@ function pro_101_media_infrastructure_user_default_permissions() {
     'module' => 'image',
   );
 
-  // Exported permission: edit file.
-  $permissions['edit file'] = array(
-    'name' => 'edit file',
+  // Exported permission: bypass file access.
+  $permissions['bypass file access'] = array(
+    'name' => 'bypass file access',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'file_entity',
+  );
+
+  // Exported permission: create files.
+  $permissions['create files'] = array(
+    'name' => 'create files',
+    'roles' => array(
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
+    ),
+    'module' => 'file_entity',
+  );
+
+  // Exported permission: delete any files.
+  $permissions['delete any files'] = array(
+    'name' => 'delete any files',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'file_entity',
+  );
+
+  // Exported permission: delete own files.
+  $permissions['delete own files'] = array(
+    'name' => 'delete own files',
+    'roles' => array(
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
+    ),
+    'module' => 'file_entity',
+  );
+
+  // Exported permission: edit any files.
+  $permissions['edit any files'] = array(
+    'name' => 'edit any files',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'file_entity',
+  );
+
+  // Exported permission: edit own files.
+  $permissions['edit own files'] = array(
+    'name' => 'edit own files',
     'roles' => array(
       0 => 'assistant',
       1 => 'developer',
@@ -72,15 +135,40 @@ function pro_101_media_infrastructure_user_default_permissions() {
     'module' => 'media',
   );
 
-  // Exported permission: view file.
-  $permissions['view file'] = array(
-    'name' => 'view file',
+  // Exported permission: view files.
+  $permissions['view files'] = array(
+    'name' => 'view files',
     'roles' => array(
       0 => 'anonymous user',
       1 => 'assistant',
-      2 => 'developer',
-      3 => 'professional',
-      4 => 'support',
+      2 => 'authenticated user',
+      3 => 'developer',
+      4 => 'professional',
+      5 => 'support',
+    ),
+    'module' => 'file_entity',
+  );
+
+  // Exported permission: view own files.
+  $permissions['view own files'] = array(
+    'name' => 'view own files',
+    'roles' => array(
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
+    ),
+    'module' => 'file_entity',
+  );
+
+  // Exported permission: view own private files.
+  $permissions['view own private files'] = array(
+    'name' => 'view own private files',
+    'roles' => array(
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'file_entity',
   );
