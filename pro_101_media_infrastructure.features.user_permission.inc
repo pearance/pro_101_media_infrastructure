@@ -59,15 +59,6 @@ function pro_101_media_infrastructure_user_default_permissions() {
     'module' => 'image',
   );
 
-  // Exported permission: administer media browser.
-  $permissions['administer media browser'] = array(
-    'name' => 'administer media browser',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'media',
-  );
-
   // Exported permission: bypass file access.
   $permissions['bypass file access'] = array(
     'name' => 'bypass file access',
