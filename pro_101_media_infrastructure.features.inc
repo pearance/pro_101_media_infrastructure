@@ -28,20 +28,24 @@ function pro_101_media_infrastructure_image_default_styles() {
   $styles['fluid-image'] = array(
     'name' => 'fluid-image',
     'effects' => array(
-      11 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
+      24 => array(
+        'label' => 'Crop and scale manually',
+        'help' => 'Crop and scale a user-selected area, respecting the ratio of the destination width and height.',
+        'effect callback' => 'manualcrop_crop_and_scale_effect',
         'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
-        'name' => 'image_scale_and_crop',
+        'form callback' => 'manualcrop_crop_and_scale_form',
+        'summary theme' => 'manualcrop_crop_and_scale_summary',
+        'module' => 'manualcrop',
+        'name' => 'manualcrop_crop_and_scale',
         'data' => array(
-          'width' => '100',
-          'height' => '100',
+          'width' => '780',
+          'height' => '400',
+          'upscale' => 1,
+          'respectminimum' => 1,
+          'onlyscaleifcrop' => 0,
+          'style_name' => 'fluid-image',
         ),
-        'weight' => '2',
+        'weight' => '0',
       ),
     ),
   );
@@ -94,7 +98,7 @@ function pro_101_media_infrastructure_image_default_styles() {
   $styles['wide-image'] = array(
     'name' => 'wide-image',
     'effects' => array(
-      7 => array(
+      20 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -107,7 +111,7 @@ function pro_101_media_infrastructure_image_default_styles() {
           'width' => '220',
           'height' => '220',
         ),
-        'weight' => '2',
+        'weight' => '1',
       ),
     ),
   );
