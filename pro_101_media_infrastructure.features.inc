@@ -54,20 +54,24 @@ function pro_101_media_infrastructure_image_default_styles() {
   $styles['narrow-image'] = array(
     'name' => 'narrow-image',
     'effects' => array(
-      10 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
+      36 => array(
+        'label' => 'Crop and scale manually',
+        'help' => 'Crop and scale a user-selected area, respecting the ratio of the destination width and height.',
+        'effect callback' => 'manualcrop_crop_and_scale_effect',
         'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
-        'name' => 'image_scale_and_crop',
+        'form callback' => 'manualcrop_crop_and_scale_form',
+        'summary theme' => 'manualcrop_crop_and_scale_summary',
+        'module' => 'manualcrop',
+        'name' => 'manualcrop_crop_and_scale',
         'data' => array(
           'width' => '140',
           'height' => '140',
+          'upscale' => 1,
+          'respectminimum' => 1,
+          'onlyscaleifcrop' => 0,
+          'style_name' => 'narrow-image',
         ),
-        'weight' => '2',
+        'weight' => '1',
       ),
     ),
   );
@@ -76,20 +80,24 @@ function pro_101_media_infrastructure_image_default_styles() {
   $styles['normal-image'] = array(
     'name' => 'normal-image',
     'effects' => array(
-      9 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
+      28 => array(
+        'label' => 'Crop and scale manually',
+        'help' => 'Crop and scale a user-selected area, respecting the ratio of the destination width and height.',
+        'effect callback' => 'manualcrop_crop_and_scale_effect',
         'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
-        'name' => 'image_scale_and_crop',
+        'form callback' => 'manualcrop_crop_and_scale_form',
+        'summary theme' => 'manualcrop_crop_and_scale_summary',
+        'module' => 'manualcrop',
+        'name' => 'manualcrop_crop_and_scale',
         'data' => array(
           'width' => '180',
           'height' => '180',
+          'upscale' => 1,
+          'respectminimum' => 1,
+          'onlyscaleifcrop' => 0,
+          'style_name' => 'normal-image',
         ),
-        'weight' => '1',
+        'weight' => '0',
       ),
     ),
   );
@@ -98,20 +106,24 @@ function pro_101_media_infrastructure_image_default_styles() {
   $styles['wide-image'] = array(
     'name' => 'wide-image',
     'effects' => array(
-      20 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
+      37 => array(
+        'label' => 'Crop and scale manually',
+        'help' => 'Crop and scale a user-selected area, respecting the ratio of the destination width and height.',
+        'effect callback' => 'manualcrop_crop_and_scale_effect',
         'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
-        'name' => 'image_scale_and_crop',
+        'form callback' => 'manualcrop_crop_and_scale_form',
+        'summary theme' => 'manualcrop_crop_and_scale_summary',
+        'module' => 'manualcrop',
+        'name' => 'manualcrop_crop_and_scale',
         'data' => array(
           'width' => '220',
           'height' => '220',
+          'upscale' => 1,
+          'respectminimum' => 1,
+          'onlyscaleifcrop' => 0,
+          'style_name' => 'wide-image',
         ),
-        'weight' => '1',
+        'weight' => '0',
       ),
     ),
   );
