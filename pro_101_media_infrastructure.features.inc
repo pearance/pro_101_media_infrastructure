@@ -102,6 +102,58 @@ function pro_101_media_infrastructure_image_default_styles() {
     ),
   );
 
+  // Exported image style: rectangular-image.
+  $styles['rectangular-image'] = array(
+    'name' => 'rectangular-image',
+    'effects' => array(
+      31 => array(
+        'label' => 'Crop and scale manually',
+        'help' => 'Crop and scale a user-selected area, respecting the ratio of the destination width and height.',
+        'effect callback' => 'manualcrop_crop_and_scale_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'manualcrop_crop_and_scale_form',
+        'summary theme' => 'manualcrop_crop_and_scale_summary',
+        'module' => 'manualcrop',
+        'name' => 'manualcrop_crop_and_scale',
+        'data' => array(
+          'width' => '160',
+          'height' => '80',
+          'upscale' => 1,
+          'respectminimum' => 1,
+          'onlyscaleifcrop' => 0,
+          'style_name' => 'rectangular-image',
+        ),
+        'weight' => '0',
+      ),
+    ),
+  );
+
+  // Exported image style: thumbnail-image.
+  $styles['thumbnail-image'] = array(
+    'name' => 'thumbnail-image',
+    'effects' => array(
+      27 => array(
+        'label' => 'Crop and scale manually',
+        'help' => 'Crop and scale a user-selected area, respecting the ratio of the destination width and height.',
+        'effect callback' => 'manualcrop_crop_and_scale_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'manualcrop_crop_and_scale_form',
+        'summary theme' => 'manualcrop_crop_and_scale_summary',
+        'module' => 'manualcrop',
+        'name' => 'manualcrop_crop_and_scale',
+        'data' => array(
+          'width' => '100',
+          'height' => '100',
+          'upscale' => 1,
+          'respectminimum' => 1,
+          'onlyscaleifcrop' => 0,
+          'style_name' => 'thumbnail-image',
+        ),
+        'weight' => '0',
+      ),
+    ),
+  );
+
   // Exported image style: wide-image.
   $styles['wide-image'] = array(
     'name' => 'wide-image',
